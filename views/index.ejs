@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <link href="/assets/bootstrap.min.css" rel="stylesheet" type="text/css" >
+
+        <script src="/assets/jquery.min.js" ></script>
+        <script src="/assets/bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <%- include('partials/nav') %>
+
+        <h1>Welcome to the most awesom website</h1>
+        <p>Your contact!</p>
+        <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+            <% users.forEach(user => { %>
+                <tr>
+                    <td><%= user.id %></td>
+                    <td><%= user.firstname %></td>
+                    <td><%= user.lastname %></td>
+                    <td><%= user.email %></td>
+                    <td><a href="/chat?contactId=<%= user.id %>">Chat</a></td>
+                </tr>
+            <% }); %>
+            </tbody>
+          </table>
+        </div>
+    </body>
+</html>

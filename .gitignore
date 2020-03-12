@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+.vscode/
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Package file
+package-lock.json

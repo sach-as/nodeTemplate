@@ -1,0 +1,32 @@
+{
+  "name": "rajput",
+  "version": "1.0.0",
+  "description": "Unity website",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
+    "offline": "nodemon start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.1",
+    "socket.io": "^2.3.0",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
